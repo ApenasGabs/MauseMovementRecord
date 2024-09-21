@@ -40,7 +40,7 @@ const url = "https://example.com";
     }, 30000);
   });
 
-  await page.waitForTimeout(30000);
+  await new Promise((resolve) => setTimeout(resolve, 30000)); // espera 30 segundos antes de fechar
   await browser.close();
 })();
 

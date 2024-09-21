@@ -16,7 +16,7 @@ const simulateInteractions = async (page, interactionData) => {
         window.scrollTo(0, top);
       }, top);
 
-      await page.waitForTimeout(scrollWaitTime);
+      await new Promise((resolve) => setTimeout(resolve, scrollWaitTime));
     }
 
     if (i < mouse.length) {
@@ -26,7 +26,7 @@ const simulateInteractions = async (page, interactionData) => {
       const mouseWaitTime = nextMouseTimestamp - mouseTimestamp;
 
       await page.mouse.move(x, y);
-      await page.waitForTimeout(mouseWaitTime);
+      await new Promise((resolve) => setTimeout(resolve, mouseWaitTime));
     }
   }
 };
