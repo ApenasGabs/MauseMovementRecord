@@ -3,7 +3,10 @@ const fs = require("fs");
 const url = "https://example.com";
 
 (async () => {
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({
+    defaultViewport: null,
+    headless: false,
+  });
   const page = await browser.newPage();
   await page.goto(url, { waitUntil: "domcontentloaded" });
 
@@ -40,7 +43,7 @@ const url = "https://example.com";
     }, 30000);
   });
 
-  await new Promise((resolve) => setTimeout(resolve, 30000)); // espera 30 segundos antes de fechar
+  await new Promise((resolve) => setTimeout(resolve, 30000));
   await browser.close();
 })();
 

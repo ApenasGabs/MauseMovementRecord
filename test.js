@@ -32,7 +32,10 @@ const simulateInteractions = async (page, interactionData) => {
 };
 
 (async () => {
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({
+    defaultViewport: null,
+    headless: false,
+  });
   const page = await browser.newPage();
   await page.goto(url, { waitUntil: "domcontentloaded" });
 
