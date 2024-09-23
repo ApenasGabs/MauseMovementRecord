@@ -51,7 +51,7 @@ Isso abrirá uma página no navegador e simulará os movimentos de rolagem e mou
 ├── interactionData.json  # Arquivo de dados gravados
 ├── package.json          # Arquivo de configuração do npm
 ├── record.js             # Script para gravar os movimentos
-├── test.js           # Script para reproduzir os movimentos
+├── test.js               # Script para reproduzir os movimentos
 └── README.md             # Este arquivo
 ```
 
@@ -71,4 +71,4 @@ Este projeto está licenciado sob a Licença "COMO ESTÁ". Isso significa que vo
 
 Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para abrir uma issue ou entrar em contato.
 
-Feito com ❤️‍🔥 por @ApenasGabs
+Feito com ❤️‍🔥 por [ApenasGabs](https://github.com/ApenasGabs)
